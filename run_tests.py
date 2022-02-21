@@ -16,7 +16,7 @@ step = 10
 plt.xlabel('nodes')
 plt.ylabel('time(s)')
 plt.title(f'Prim(red)  ---   Kruskal(yellow)\n\
- Iterations made - {10*number_of_iterations}\
+ Iterations made - {number_of_iterations}\
     Completeness - {completeness}    Step - {step}')
 x_arguments, prim_times, kruskal_times = [], [], []
 
