@@ -1,6 +1,8 @@
 """
-Module to draw the minimum cost spanning tree of the graph set by the networkx Graph using Prims algoritm
-In this module is one function prim_mst which returns the minimum spanning tree of the graph
+Module to draw the minimum cost spanning tree of
+the graph set by the networkx Graph using Prims algoritm
+In this module is one function prim_mst which returns
+the minimum spanning tree of the graph
 """
 
 import heapq
@@ -10,8 +12,8 @@ import networkx as nx
 def prim_mst(graph: nx.Graph):
     """
 
-    Find and return the graph (the tree) with tha minimum spanning tree of the graph
-    By using of the prim's algoritm
+    Find and return the graph (the tree) with tha minimum
+    spanning tree of the graph by using of the prim's algorithm
     :graph - networkx Graph object
     Return: tree with minimum edge costs of the set graph
 

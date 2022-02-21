@@ -11,6 +11,7 @@ def gnp_random_connected_graph(num_of_nodes: int,
     Generates a random undirected graph, similarly to an Erdős-Rényi
     graph, but enforcing that the resulting graph is conneted
     """
+    max_weight = 100
 
     edges = combinations(range(num_of_nodes), 2)
     G = nx.Graph()
@@ -24,8 +25,8 @@ def gnp_random_connected_graph(num_of_nodes: int,
             if random.random() < completeness:
                 G.add_edge(*e)
 
-    for (u,v,w) in G.edges(data=True):
-        w['weight'] = random.randint(0,10)
+    for (_,_,w) in G.edges(data=True):
+        w['weight'] = random.randint(0,100000)
 
     if draw:
         plt.figure(figsize=(10,6))
