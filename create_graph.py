@@ -34,11 +34,3 @@ def gnp_random_connected_graph(num_of_nodes: int,
             node_size=500)
 
     return G
-
-G = gnp_random_connected_graph(10,0.5,False)
-print(G.edges)
-print(G.number_of_nodes())
-print(list(G.adj[0]))
-# S = nx.to_numpy_matrix(G)
-# S[0][0] = 1
-# print(S)
