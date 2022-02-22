@@ -8,16 +8,16 @@ import prim
 import time
 import matplotlib.pyplot as plt
 
-number_of_iterations = 2
+number_of_iterations = 10
 number_of_nodes = 1000
-completeness = 0.9
-step = 10
+completeness = 1
+step = 5
 
 plt.xlabel('nodes')
 plt.ylabel('time(s)')
 plt.title(f'Prim(red)  ---   Kruskal(yellow)\n\
- Iterations made - {5*number_of_iterations}\
-    Completeness - {completeness}    Step - {step//2}')
+ Iterations made - {number_of_iterations}\
+    Completeness - {completeness}    Step - {step}')
 x_arguments, prim_times, kruskal_times = [], [], []
 
 
